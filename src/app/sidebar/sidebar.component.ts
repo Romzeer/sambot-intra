@@ -1,7 +1,8 @@
 import { AfterViewInit, Component, OnInit, OnDestroy } from '@angular/core';
 import { SettingsService } from '../services/settings.service';
 import { ROUTES } from './sidebar-routes.config';
-import {AccountService} from '../shared/services/account.service';
+import { AccountService } from '../shared/services/account.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -9,12 +10,18 @@ import {AccountService} from '../shared/services/account.service';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit, AfterViewInit, OnDestroy {
+
   public color: string;
   public menuItems: object;
   public activeFontColor: string;
   public normalFontColor: string;
   public dividerBgColor: string;
-  constructor(public settingsService: SettingsService) {
+
+  constructor(
+    public settingsService: SettingsService,
+    private accountService: AccountService,
+    private router: Router
+  ) {
     this.menuItems = ROUTES;
     this.activeFontColor = 'rgba(0,0,0,.6)';
     this.normalFontColor = 'rgba(255,255,255,.8)';
@@ -48,5 +55,10 @@ export class SidebarComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
   }
-  
+
+  logout(){
+    this.accountService.logout();
+    this.router.navigateByUrl('/login');
+  }
+
 }

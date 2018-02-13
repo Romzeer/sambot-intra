@@ -27,9 +27,8 @@ const routes: Routes = [
     {path: 'components/price-table', component: PriceTableComponent},
     {path: 'components/panels', component: PanelsComponent},
     {path: 'components/wizard', component: WizardComponent},
-    {path: 'todolist', pathMatch: 'full', component: TaskListComponent, children: null}
+    {path: 'todolist', pathMatch: 'full', component: TaskListComponent}
   ]},
 ];
 
 export const routing = RouterModule.forRoot(routes);
-

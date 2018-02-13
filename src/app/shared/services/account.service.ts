@@ -15,7 +15,6 @@ export class AccountService {
 
   logout(): void {
     this.authService.signOut();
-    window.location.replace('/login');
   }
 }
 

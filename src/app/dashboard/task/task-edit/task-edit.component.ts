@@ -36,7 +36,7 @@ export class TaskEditComponent implements OnInit, OnDestroy {
 
   submitTask() {
     this.taskService.edit(this.task);
-    this.router.navigateByUrl('/')
+    this.router.navigateByUrl('/dashboard/todolist')
   }
 
 }

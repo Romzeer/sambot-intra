@@ -34,8 +34,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { TaskModule } from './dashboard/task/task.module';
 import { SharedModule } from './shared/shared.module';
 
-
-
 const CONFIG = new AuthServiceConfig([
   {
     id: '482273183967-uu4b32fenfbvmdnodc58l6nakfmppvn6',
