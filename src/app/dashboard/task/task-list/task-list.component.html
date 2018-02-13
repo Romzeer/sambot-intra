@@ -1,0 +1,31 @@
+<div class="text-right">
+  <a class="btn btn-success" routerLink="/task/new">Ajouter</a>
+</div>
+
+<div class="container">
+  <br>
+  <table class="table">
+    <thead class="thead-light">
+    <tr>
+      <th>Id</th>
+      <th>Nom</th>
+      <th>Contenu</th>
+      <th>Priorité</th>
+      <th>Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let task of tasks" [appPriorityBg]="task.priority" class="tr-row">
+      <td>{{ task.id }}</td>
+      <td>{{ task.name }}</td>
+      <td>{{ task.content }}</td>
+      <td>{{ task.priority | priority }}</td>
+      <td>{{ task.date }}</td>
+      <td>
+        <a class="btn btn-info" [routerLink]="['/task/', task.id]">Modifier</a>
+        <a class="btn btn-danger" (click)="removeTask(task.id)" href="javascript:;">Supprimer</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
