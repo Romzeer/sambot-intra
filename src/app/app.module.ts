@@ -35,6 +35,9 @@ import { TaskModule } from './dashboard/task/task.module';
 import { SharedModule } from './shared/shared.module';
 import { AbsenceComponent } from './dashboard/absence/absence.component';
 
+import { CalendarModule, CalendarMonthViewComponent, CalendarMonthModule } from 'angular-calendar';
+import { CalendarComponent } from './dashboard/calendar/calendar.component';
+
 const CONFIG = new AuthServiceConfig([
   {
     id: '482273183967-uu4b32fenfbvmdnodc58l6nakfmppvn6',
@@ -68,7 +71,8 @@ export function provideConfig() {
     PanelsComponent,
     WizardComponent,
     ClasseComponent,
-    AbsenceComponent
+    AbsenceComponent,
+    CalendarComponent
   ],
   imports: [
     RouterModule.forRoot([]),
@@ -85,7 +89,7 @@ export function provideConfig() {
     MatMenuModule,
     MatCheckboxModule,
     HttpClientModule,
-    TaskModule,
+    TaskModule
   ],
   providers: [
     {
