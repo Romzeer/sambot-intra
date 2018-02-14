@@ -37,6 +37,7 @@ import { AbsenceComponent } from './dashboard/absence/absence.component';
 
 import { CalendarModule, CalendarMonthViewComponent, CalendarMonthModule } from 'angular-calendar';
 import { CalendarComponent } from './dashboard/calendar/calendar.component';
+import { BotComponent } from './dashboard/bot/bot.component';
 
 const CONFIG = new AuthServiceConfig([
   {
@@ -72,7 +73,8 @@ export function provideConfig() {
     WizardComponent,
     ClasseComponent,
     AbsenceComponent,
-    CalendarComponent
+    CalendarComponent,
+    BotComponent
   ],
   imports: [
     RouterModule.forRoot([]),

@@ -14,6 +14,7 @@ import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
 import { AbsenceComponent } from './dashboard/absence/absence.component';
 import { CalendarComponent } from './dashboard/calendar/calendar.component';
+import { BotComponent } from './dashboard/bot/bot.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -31,6 +32,7 @@ const routes: Routes = [
     {path: 'todolist', pathMatch: 'full', component: TaskListComponent},
     {path: 'absence', pathMatch: 'full', component: AbsenceComponent},
     {path: 'calendar', pathMatch: 'full', component: CalendarComponent},
+    {path: 'bot', pathMatch: 'full', component: BotComponent},
   ]},
 ];
 
