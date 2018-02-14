@@ -12,7 +12,7 @@ import { TaskListComponent } from './dashboard/task/task-list/task-list.componen
 import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
-
+import { AbsenceComponent } from './dashboard/absence/absence.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -27,7 +27,8 @@ const routes: Routes = [
     {path: 'components/price-table', component: PriceTableComponent},
     {path: 'components/panels', component: PanelsComponent},
     {path: 'components/wizard', component: WizardComponent},
-    {path: 'todolist', pathMatch: 'full', component: TaskListComponent}
+    {path: 'todolist', pathMatch: 'full', component: TaskListComponent},
+    {path: 'absence', pathMatch: 'full', component: AbsenceComponent},
   ]},
 ];
 

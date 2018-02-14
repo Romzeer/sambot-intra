@@ -33,6 +33,7 @@ import { ClasseComponent } from './dashboard/classe/classe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TaskModule } from './dashboard/task/task.module';
 import { SharedModule } from './shared/shared.module';
+import { AbsenceComponent } from './dashboard/absence/absence.component';
 
 const CONFIG = new AuthServiceConfig([
   {
@@ -67,6 +68,7 @@ export function provideConfig() {
     PanelsComponent,
     WizardComponent,
     ClasseComponent,
+    AbsenceComponent
   ],
   imports: [
     RouterModule.forRoot([]),
