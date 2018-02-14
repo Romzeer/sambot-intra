@@ -23,6 +23,18 @@
               </tr>
               </thead>
               <tbody>
+              <tr>
+                <td>Tache1</td>
+                <td>Content Tache 1</td>
+                <td>Bas</td>
+                <td>Mardi 20 Février</td>
+              </tr>
+              <tr>
+                <td>Tache2</td>
+                <td>Content Tache 2</td>
+                <td>Bas</td>
+                <td>Mardi 20 Février</td>
+              </tr>
               <tr *ngFor="let task of tasks" [appPriorityBg]="task.priority" class="tr-row">
                 <td>{{ task.name }}</td>
                 <td>{{ task.content }}</td>
