@@ -4,7 +4,7 @@ export const ROUTES = [
     { path: 'notes', title: 'Notes', icon: 'content_paste', children: null },
     { path: 'abscences', title: 'Absences', icon: 'apps', children: null},
     { path: 'todolist', title: 'Todo Liste', icon: 'content_paste', children: null },
-    /*{ path: 'notification', title: 'Notifications', icon: 'notifications', children: null },
-    { path: 'alert', title: 'Sweet Alert', icon: 'warning', children: null },*/
+    { path: 'calendar', title: 'Calendrier', icon: 'alarm', children: null },
+    //{ path: 'alert', title: 'Sweet Alert', icon: 'warning', children: null },*/
     { path: 'settings', title: 'Settings', icon: 'settings', children: null },
 ];

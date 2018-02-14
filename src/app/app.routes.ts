@@ -12,7 +12,7 @@ import { TaskListComponent } from './dashboard/task/task-list/task-list.componen
 import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
-
+import { CalendarComponent } from './dashboard/calendar/calendar.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -20,6 +20,7 @@ const routes: Routes = [
   {path: 'dashboard', component: RootComponent, children: [
     {path: '', component: HomeComponent},
     {path: 'profile', component: ProfileComponent},
+    {path: 'calendar', component: CalendarComponent},
     {path: 'notes', component: TableComponent},
     {path: 'notification', component: NotificationComponent},
     {path: 'alert', component: SweetAlertComponent},
