@@ -6,7 +6,5 @@ export const ROUTES = [
     { path: 'calendar', title: 'Calendier', icon: 'date_range', children: null},
     { path: 'todolist', title: 'TodoList', icon: 'playlist_add_check', children: null },
     { path: 'bot', title: 'SamBot', icon: 'chat', children: null },
-    /*{ path: 'notification', title: 'Notifications', icon: 'notifications', children: null },
-    { path: 'alert', title: 'Sweet Alert', icon: 'warning', children: null },*/
     { path: 'settings', title: 'Settings', icon: 'settings', children: null },
 ];
