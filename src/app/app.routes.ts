@@ -13,7 +13,7 @@ import { RootComponent } from './dashboard/root/root.component';
 import { LoginComponent } from './page/login/login.component';
 import { RegisterComponent } from './page/register/register.component';
 import { AbsenceComponent } from './dashboard/absence/absence.component';
-import { CalendarComponent } from './dashboard/calendar/calendar.component';
+import { CalendarCustComponent } from './dashboard/calendar/calendar.component';
 import { BotComponent } from './dashboard/bot/bot.component';
 
 const routes: Routes = [
@@ -31,7 +31,7 @@ const routes: Routes = [
     {path: 'components/wizard', component: WizardComponent},
     {path: 'todolist', pathMatch: 'full', component: TaskListComponent},
     {path: 'absence', pathMatch: 'full', component: AbsenceComponent},
-    {path: 'calendar', pathMatch: 'full', component: CalendarComponent},
+    {path: 'calendar', pathMatch: 'full', component: CalendarCustComponent},
     {path: 'bot', pathMatch: 'full', component: BotComponent},
   ]},
 ];
